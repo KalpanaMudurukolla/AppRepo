@@ -1,0 +1,28 @@
+<div class="row mx-auto">
+    <div class="col-sm-7">
+        <form #formRef="ngForm" (ngSubmit)="onSubmit(formRef)">
+            <div class="form-check form-switch">
+                <input class="form-check-input" type="radio" id="user" name="usertype" value="user" ngModel >
+                <label class="form-check-label" for="user">user</label>
+              </div>
+              <div class="form-check form-switch">
+                <input class="form-check-input" type="radio" id="admin" name="usertype" value="admin" ngModel >
+                <label class="form-check-label" for="admin">admin</label>
+              </div>
+            <!--username-->
+            <div class="form-Floating mt-3">
+                <label for="un">Username</label>
+                <input type="text" class="form-control" id="un" placeholder="username" name="usertype" ngModel>
+              
+            </div>
+             <!--email-->
+             <div class="form-Floating mt-3">
+                <label for="email">Email</label>
+                <input type="text" class="form-control" id="email" placeholder="email" name="usertype" ngModel>
+                </div>
+    
+            <button type="submit" class="btn btn-primary">Login
+            </button>
+        </form>
+    </div>
+</div>
